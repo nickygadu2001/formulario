@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Perfil del Usuario</title>
+    
+    <script>
+        window.onload = function() {
+            // Recuperar datos del almacenamiento local
+            const nombre = localStorage.getItem('nombre');
+            const apellido = localStorage.getItem('apellido');
+            const fechaNacimiento = localStorage.getItem('fecha_nacimiento');
+            const ocupacion = localStorage.getItem('ocupacion');
+            const contacto = localStorage.getItem('contacto');
+            const País = localStorage.getItem('País');
+            const nivelIngles = localStorage.getItem('nivel_ingles');
+            const lenguajes = localStorage.getItem('lenguajes');
+            const aptitudes = localStorage.getItem('aptitudes');
+            const habilidades = localStorage.getItem('habilidades');
+            const perfil = localStorage.getItem('perfil');
+
+            // Mostrar datos en la página
+            document.getElementById('nombre').innerText = nombre;
+            document.getElementById('apellido').innerText = apellido;
+            document.getElementById('fecha_nacimiento').innerText = fechaNacimiento;
+            document.getElementById('ocupacion').innerText = ocupacion;
+            document.getElementById('contacto').innerText = contacto;
+            document.getElementById('País').innerText = nacionalidad;
+            document.getElementById('nivel_ingles').innerText = nivelIngles;
+            document.getElementById('lenguajes').innerText = lenguajes;
+            document.getElementById('aptitudes').innerText = aptitudes;
+            document.getElementById('habilidades').innerText = habilidades;
+            document.getElementById('perfil').innerText = perfil;
+        }
+    </script>
+</head>
+<body>
+    <div class="perfil-container">
+        <h2>Perfil del Usuario</h2>
+        <strong>Nombre:</strong> <span id="nombre"></span><br><br>
+        <strong>Apellidos:</strong> <span id="apellidos"></span><br><br>
+        <strong>Fecha de Nacimiento:</strong> <span id="fecha_nacimiento"></span><br><br>
+        <strong>Ocupación:</strong> <span id="ocupacion"></span><br><br>
+        <strong>Contacto:</strong> <span id="contacto"></span><br><br>
+        <strong>País:</strong> <span id="País"></span><br><br>
+        <strong>Nivel de Inglés:</strong> <span id="nivel_ingles"></span><br><br>
+        <strong>Lenguajes de Programación:</strong> <span id="lenguajes"></span><br><br>
+        <strong>Aptitudes:</strong> <span id="aptitudes"></span><br><br>
+        <strong>Habilidades:</strong> <span id="habilidades"></span><br><br>
+        <strong>Perfil:</strong> <span id="perfil"></span>
+    </div>
+</body>
+</html>
